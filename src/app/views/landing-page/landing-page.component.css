@@ -1,0 +1,741 @@
+.box {
+  /* width: 200px;
+  height: 500px; */
+  transition-property: transform;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  z-index: 2;
+}
+
+.height-20{
+  height: 20%;
+}
+
+
+/* .box:hover {
+  transform: translateY(-200px);
+} */
+
+@keyframes anim {
+  0% {
+  }
+  30% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+  /* 100% {
+    transform: translateY(-1000px);
+  } */
+}
+
+.firepit {
+  position: absolute;
+  /* bottom: 0; */
+  bottom: 40px;
+
+  rotate: 180deg;
+
+  transition-property: transform;
+  transition-duration: 3s;
+
+  transition-timing-function: ease-out;
+  animation-name: fir-anim;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes fir-anim {
+  0% {
+  }
+  30% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+  /* 100% {
+    transform: translateY(-1000px);
+  } */
+}
+
+
+.f-bc {
+  height: 100%;
+  /* background: rgb(217, 188, 154);
+  background: linear-gradient(
+    0deg,
+    rgba(217, 188, 154, 1) 54%,
+    rgba(107, 191, 187, 1) 100%
+  ); */
+  /* background: rgb(217, 188, 154); */
+  background: #f1f4de ;
+  /* background: linear-gradient(0deg, rgba(217,188,154,1) 65%, rgba(107,191,187,1) 100%); */
+  position: absolute;
+  bottom: 0;
+  animation-name: f-bc-anim;
+  transition-property: transform;
+  transition-duration: 2s;
+  /* transition-timing-function: linear; */
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes f-bc-anim {
+  100% {
+    /* transform: scaleY(.1); */
+  }
+}
+
+.background-clr {
+  /* background-color: #6bbfbb; */
+  background: rgb(217, 188, 154);
+  background: linear-gradient(
+    0deg,
+  #f1f4de 0%,
+    rgba(107, 191, 187, 1) 10%
+  );
+}
+
+.background-det {
+  /* background: rgb(217, 188, 154); */
+  background: #f1f4de ;
+  /* background: linear-gradient(
+    0deg,
+    rgb(199, 79, 58, 1) 0%,
+    rgba(217, 188, 154, 1) 10%); */
+}
+
+.height-8{
+  height: 8%;
+}
+.bc-anim {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+
+  position: absolute;
+  top: -100%;
+  animation-name: bc-anim;
+  transition-property: transform;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes bc-anim {
+  100% {
+    top: 0;
+  }
+}
+
+.bc-anim img {
+  width: 200px;
+  position: absolute;
+  animation-name: cld-anim;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  z-index: 3;
+}
+
+@keyframes cld-anim {
+  100% {
+    transform: translateY(900px);
+  }
+}
+
+.c1 {
+  left: 300px;
+  top: -100px;
+}
+
+.c2 {
+  left: 600px;
+  top: -300px;
+}
+
+.c3 {
+  right: 600px;
+  top: -200px;
+}
+
+.c4 {
+  right: 250px;
+  top: -450px;
+}
+
+.c5 {
+  left: 700px;
+  top: -150px;
+}
+
+.c6 {
+  right: 700px;
+  top: -500px;
+}
+
+.c7 {
+  left: 75px;
+  top: -685px;
+}
+
+.c8 {
+  left: 132px;
+  top: -370px;
+}
+
+.c9 {
+  right: 77px;
+  top: -112px;
+}
+
+.c10 {
+  right: 87px;
+  top: -712px;
+}
+
+.cld-main img {
+  position: absolute;
+  animation-name: m-cld-anim;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.anim{
+  position: absolute;
+  animation-name: m-cld-anim;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  z-index: 2;
+  visibility: hidden;
+}
+
+@keyframes m-cld-anim {
+  100% {
+    visibility: visible;
+    transform: translateY(600px);
+  }
+}
+.m-c-1 {
+  top: -470px;
+  left: 345px;
+}
+
+.m-c-siz {
+  width: 700px !important;
+
+  /* z-index: ; */
+}
+
+.bac-1-cld{
+  height: 45vh;
+background-image: url('../../../assets/images/clouds/cloud-2.png');
+background-size: cover;
+}
+
+.bac-2-cld{
+  height: 53vh;
+background-image: url('../../../assets/images/clouds/cloud-3.png');
+background-size: cover;
+}
+
+.m-c-2 {
+  top: -200px;
+  right: 400px;
+}
+
+.txt-1 {
+  position: absolute;
+  top: 600px;
+  right: 330px;
+  visibility: hidden;
+text-align: center;
+  animation-name: txt-anim1;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-out;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  z-index: 5;
+  width: 420px;
+}
+
+@keyframes txt-anim1 {
+  0% {
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(-150px);
+  }
+}
+
+.background-fotter {
+  /* background-color: #6bbfbb; */
+  background-color: #3d405b;
+  min-height: auto;
+}
+
+
+.txt-2 {
+  position: absolute;
+  top: 350px;
+  left: 12vw;
+  visibility: hidden;
+  width: 350px;
+
+  animation-name: txt-anim2;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-out;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  z-index: 5;
+}
+
+@keyframes txt-anim2 {
+  0% {
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(250px);
+  }
+}
+
+.bubbly-button {
+  /* align-self: end; */
+  display: inline-block;
+  font-size: 20px;
+  /* padding: 1em 2em; */
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #e07a5f;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(250, 155, 2 0.5);
+}
+
+.outer-det {
+  width: 51vw;
+  height: 57vh;
+  padding: 5px;
+  outline: 5px solid black;
+  border-radius: 16px;
+}
+
+.inner-det {
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+  outline: #9b2433 solid 5px;
+}
+
+.background-3 {
+  background: #c7503a;
+}
+
+.padding-150 {
+  padding: 150px;
+}
+
+.width-50 {
+  width: 50%;
+}
+.img-fot-wid {
+  width: 100%;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.29);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(5.7px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.spon-size {
+  margin-top: 30px;
+  /* width: 70%;
+  height: 50%; */
+}
+
+.spon-logo-size {
+  
+  height: 200px;
+}
+
+.height-80{
+  height: 80%;
+}
+.over-x-hid {
+  overflow-x: hidden;
+}
+.size-b {
+  width: 12rem;
+  height: 3rem;
+  margin: 20px 0;
+}
+
+.img-fot-height {
+  height: 100%;
+}
+
+.spo-height-100 {
+  height: 100%;
+}
+
+.disc-img{
+  width: 40%;
+  height: 64vh ;
+  background-image: url('../../../assets/images/bild.png');
+  background-size: cover;
+  background-position: center;
+}
+.bac-img2{
+  background-image: url('../../../assets/images/bild-2.png') !important;
+  background-repeat: no-repeat;
+}
+
+.disc-div{
+  width: 60%;
+}
+
+.fire {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.fire .flame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 70%;
+  border-bottom-left-radius: 70%;
+  border-top-left-radius: 70%;
+  transform: rotate(-45deg) skew(-10deg, -10deg);
+  background-color: #f20;
+  background-image: linear-gradient(top right, rgba(255, 34, 0, 0.9), rgba(255, 106, 0, 0.7));
+  z-index: 1;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-name: burn-left;
+  animation-duration: 300ms;
+}
+.fire .flame:nth-of-type(2n) {
+  animation-name: burn-right;
+  animation-duration: 400ms;
+}
+.fire .flame:nth-of-type(2) {
+  height: 80%;
+  width: 80%;
+  left: 10%;
+  background-color: #ff6a00;
+  background-image: linear-gradient(top right, rgba(255, 106, 0, 0.1), rgba(255, 200, 0, 0.1));
+  z-index: 2;
+}
+.fire .flame:nth-of-type(3) {
+  height: 50%;
+  width: 50%;
+  left: 25%;
+  background-image: linear-gradient(top right, #ffc800, white);
+  z-index: 3;
+}
+.fire .flame:nth-of-type(4) {
+  height: 30%;
+  width: 30%;
+  left: 35%;
+  background-color: white;
+  background-image: linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(0, 55, 255, 0.9));
+  opacity: 1;
+  z-index: 4;
+}
+.spark {
+  position: absolute;
+  bottom: 46%;
+  left: 15%;
+  width: 3px;
+  height: 3px;
+  background-color: rgba(255, 106, 0, 0.4);
+  animation-name: fly-up-burnout-1;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.4s;
+}
+.spark:nth-of-type(2n) {
+  animation-name: fly-up-burnout-2;
+  animation-duration: 8.4s;
+  animation-delay: 1s;
+}
+.spark:nth-of-type(3n) {
+  animation-delay: 1.9s;
+  animation-duration: 8s;
+  left: 55%;
+}
+.spark:nth-of-type(4n) {
+  animation-delay: 2.6s;
+  animation-duration: 7s;
+  left: 88%;
+}
+.spark:nth-of-type(5n) {
+  animation-delay: 1.4s;
+  animation-duration: 7s;
+  left: 22%;
+}
+.spark:nth-of-type(6n) {
+  animation-delay: 3.2s;
+  left: 61%;
+}
+.spark:nth-of-type(7n) {
+  animation-delay: 0.8s;
+  animation-duration: 5s;
+  left: 64%;
+}
+.spark:nth-of-type(8n) {
+  animation-delay: 5s;
+  left: 19%;
+}
+.spark:nth-of-type(9n) {
+  animation-delay: 4s;
+  animation-duration: 6.8s;
+  left: 22%;
+}
+.spark:nth-of-type(10n) {
+  animation-delay: 5.2s;
+  left: 61%;
+}
+.spark:nth-of-type(11n) {
+  animation-delay: 3.5s;
+  animation-duration: 8s;
+  left: 81%;
+}
+.spark:nth-of-type(12n) {
+  animation-delay: 2s;
+  left: 85%;
+}
+@keyframes burn-left {
+  0%, 100% {
+    transform: rotate(-45deg) skew(-10deg, -10deg) scale(1);
+ }
+  30%, 60% {
+    transform: rotate(-44deg) skew(-12deg, -12deg) scale(1.01);
+ }
+}
+@keyframes burn-right {
+  0%, 100% {
+    transform: rotate(-45deg) skew(-10deg, -10deg) scale(1);
+ }
+  30%, 60% {
+    transform: rotate(-46deg) skew(-6deg, -6deg) scale(1.01);
+ }
+}
+@keyframes fly-up-burnout-1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+ }
+  33% {
+    transform: translate(12px, -70px);
+ }
+  66% {
+    transform: translate(0, -140px);
+    opacity: 0.6;
+ }
+  100% {
+    transform: translate(6px, -200px);
+    opacity: 0;
+ }
+}
+@keyframes fly-up-burnout-2 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+ }
+  50% {
+    transform: translate(-10px, -80px);
+ }
+  80% {
+    transform: translate(-4px, -140px);
+    opacity: 0.6;
+ }
+  100% {
+    transform: translate(-6px, -160px);
+    opacity: 0;
+ }
+}
+.p-width {
+  width: 90%;
+  font-size: 19px;
+}
+
+.container{
+  width: 80%;
+}
+
+
+.d-f{
+  display: flex;
+}
+
+.sidnv{
+  width: 500px;
+  background-color: #9b2433;
+}
+
+.z-3{
+  position: absolute;
+  z-index: 3;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.nv-dis-non{
+  display: none;
+}
+
+
+
+.fotter-img{
+  width: 90px;
+}
+
+mat-expansion-panel{
+  box-shadow: none !important;
+  border-bottom: 1px solid;
+  /* border-radius: 10px !important; */
+  margin-top: 10px;
+}
+
+::ng-deep .mat-content{
+  padding-bottom: 17px !important;
+}
+
+.height-60{
+  height: 60%;
+}
+
+.so-icon{
+  font-size: 32px;
+  color: white;
+}
+
+.color-white{
+  color: white;
+}
+
+.width-80{
+  width: 80%;
+}
+
+h4{
+  cursor: pointer;
+}
+
+.animated-text{
+  opacity: 0;
+  display: none;
+  
+}
+.anim-hover{
+  transition-property: transform;
+  transition-duration: 5s ;
+}
+
+.anim-hover:hover .animated-text{
+  display: block;
+  opacity: 1;
+  transform: translateX(10px);
+  transition-property: transform;
+  transition-duration: 5s ;
+}
+
+
+.cont {
+  /* این تنظیمات برای حالت اولیه */
+  overflow: hidden;
+  transition: width 2s ease;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  /* border: 3px solid #ffd7a6ff; */
+  /* border-radius: 25px; */
+  height: 40px;
+}
+
+.cont.expanded {
+  /* تنظیمات برای وضعیت گسترده شده */
+  width: 10vw;
+}
+
+.cont.collapsed {
+  /* تنظیمات برای وضعیت جمع شده */
+  width: 40px;
+}
+
+.eitaa-icon{
+  width: 30px;
+}

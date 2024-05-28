@@ -1,0 +1,84 @@
+<div class="main" fxLayout="column" fxLayoutAlign="center center">
+  <form [formGroup]="regFrm" (submit)="register()">
+    <div
+      class="glass card z-3"
+      fxLayout="column"
+      fxLayoutAlign=" stretch center"
+      fxLayoutGap="10px"
+    >
+      <mat-icon class="login-icon">account_circle</mat-icon>
+
+        <input
+          required
+          matInput
+          type="text"
+          placeholder="نام"
+          formControlName="firstName"
+          fxFlex="80"
+        />
+  
+        <input
+          required
+          matInput
+          type="text"
+          placeholder="نام خانوادگی "
+          formControlName="lastName"
+          fxFlex="80"
+        />
+   
+        <input
+          required
+          matInput
+          type="text"
+          formControlName="age"
+          fxFlex="80"
+          placeholder="سن"
+        />
+      
+        <input
+          required
+          matInput
+          type="text"
+          placeholder="شماره مبایل "
+          formControlName="phoneNumber"
+          fxFlex="80"
+        />
+
+   
+        <input
+          required
+          matInput
+          type="text"
+          placeholder="کدملی"
+          formControlName="nationalCode"
+          fxFlex="80"
+        />
+
+        <input
+          required
+          matInput
+          type="text"
+          placeholder="آدرس"
+          formControlName="address"
+          fxFlex="80"
+        />
+
+      <mat-hint>برای ارسال جایزه</mat-hint>
+
+ 
+        <select matNativeControl placeholder="چگونه با ما آشنا شدید؟ " fxFlex="80">
+          @for (d of data; track d) {
+          <option>
+            {{ d.text }}
+          </option>
+          }
+        </select>
+
+
+      <button type="submit" class="sub-button bubbly-button">ثبت نام</button>
+    </div>
+  </form>
+
+  <img class="vis-big-cld" src="../../../assets/images/bild-log-reg.png" />
+  <img class="vis-sml-cld" src="../../../assets/images/bild-2.png" />
+</div>

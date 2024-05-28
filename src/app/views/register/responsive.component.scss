@@ -1,0 +1,51 @@
+@media screen and (max-width: 1300px) {
+  .card {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 820px) {
+  .card {
+    width: 80vw;
+  }
+
+  .vis-big-cld {
+    visibility: hidden;
+    display: none;
+  }
+
+  .vis-sml-cld {
+    visibility: visible;
+    display: block;
+  }
+  .res-div {
+    flex-direction: column;
+  }
+  .login-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 515px) {
+  mat-label {
+    font-size: 12px;
+  }
+
+  .sub-button {
+    height: 26px;
+    font-size: 10px !important;
+  }
+
+  mat-hint {
+    font-size: 10px;
+  }
+
+  .glass {
+    border-radius: 30px;
+  }
+  .card {
+    padding: 21px 12px;
+  }
+}
+
+// @media  screen and (max-height: 700px){
+
+// }

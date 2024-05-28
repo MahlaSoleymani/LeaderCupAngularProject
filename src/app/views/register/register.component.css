@@ -1,0 +1,89 @@
+.card {
+
+    padding: 10% 20px;
+    height: auto;
+    width: 30vw;
+    max-height: 95vh;
+  }
+  
+
+
+  .glass {
+    background: rgba(255, 255, 255, 0.41);
+    border-radius: 72px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13px);
+  }
+  
+  .main {
+    background-color: #6bbfbb;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+  }
+
+  .z-3{
+    z-index: 3;
+    position: relative;
+  }
+
+  .m-t-20{
+    margin-top: 20px;
+  }
+  
+  .sub-button {
+    height: 45px;
+    margin-top: 30px;
+    font-size: 20px !important;
+  }
+  
+  .text{
+      text-align: center;
+      margin-bottom: 5vh !important;
+  }
+  
+  .login-icon{
+    width: auto;
+    height: auto;
+    font-size: 80px;
+   align-self: center;
+  }
+  
+  input{
+    margin-bottom: 10px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 4px;
+    
+  }
+  img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .vis-sml-cld{
+    visibility: hidden;
+    display: none;
+  }
+
+  mat-hint{
+    font-size: 13px;
+  }
+
+  select{
+    margin-bottom: 10px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+  
+  input:focus-visible{
+    border: none !important;
+  }
+  input:focus{
+    border: none !important;
+  }

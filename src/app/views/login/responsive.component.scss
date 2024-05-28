@@ -1,0 +1,21 @@
+@media  screen and (max-width: 1300px){
+    .card{
+        width: 40vw;
+    }
+}
+@media  screen and (max-width: 820px){
+    .card{
+        width: 80vw;
+    }
+
+    .vis-big-cld{
+        visibility: hidden;
+        display: none;
+    }
+
+    .vis-sml-cld{
+        visibility: visible;
+        display: block;
+    }
+}
+

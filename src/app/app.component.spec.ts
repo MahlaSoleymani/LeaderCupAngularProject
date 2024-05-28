@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'EventDashboard' title`, () => {
+  it(`should have the 'LeaderCup' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('EventDashboard');
+    expect(app.title).toEqual('LeaderCup');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, EventDashboard');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, LeaderCup');
   });
 });

@@ -1,0 +1,21 @@
+<div class="main ovr-hid " fxLayout="column" fxLayoutAlign="center center">
+  <form [formGroup]="loginFrm" >
+    <div class="glass card bord z-3" fxLayout="column" fxLayoutAlign=" stretch center" fxLayoutGap="10px" >
+
+      <mat-icon class="login-icon">account_circle</mat-icon>
+      <!-- <mat-form-field  matTooltip="کدملی" appearance="outline"> -->
+        <mat-label>نام کاربری :</mat-label>
+        <input required matInput type="text" formControlName="nationalCode" />
+      <!-- </mat-form-field> -->
+
+      <!-- <mat-form-field matTooltip="شماره مبایل" appearance="outline"> -->
+        <mat-label>رمز :</mat-label>
+        <input required matInput type="text" formControlName="phoneNumber"  />
+
+      <button type="submit" class="sub-button bubbly-button ">ورود</button>
+    </div>
+  </form>
+
+  <img class="vis-big-cld" src="../../../assets/images/bild-log-reg.png" />
+  <img class="vis-sml-cld" src="../../../assets/images/bild-2.png" />
+</div>

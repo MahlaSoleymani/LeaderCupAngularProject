@@ -1,0 +1,100 @@
+.card {
+  padding: 20px;
+  height: auto;
+  width: 27vw;
+}
+
+
+.z-3{
+  z-index: 3;
+  position: relative;
+}
+.main {
+  background-color: #6bbfbb;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden !important;
+  /* overflow-y: hidden; */
+}
+
+.sub-button {
+  height: 45px;
+  margin-top: 30px;
+  font-size: 20px !important;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 5vh !important;
+}
+
+.login-icon {
+  width: auto;
+  height: auto;
+  font-size: 80px;
+  align-self: center;
+}
+
+.bord{
+border-radius: 30px;
+}
+
+input {
+  margin-bottom: 10px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+img{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.z-3{
+  z-index: 3;
+  position: relative;
+}
+
+.vis-sml-cld{
+  visibility: hidden;
+  display: none;
+}
+
+/* @media only screen and (max-width: 900px) {
+  .login-icon {
+    font-size: 42px;
+  }
+
+  .card {
+    padding: 25% 20px;
+    height: 57vh;
+    width: 55vw;
+  }
+
+  .sub-button {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    padding: 15% 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  form {
+    width: 91%;
+    height: 50%;
+  }
+} */
