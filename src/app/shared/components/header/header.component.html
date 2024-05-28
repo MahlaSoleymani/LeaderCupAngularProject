@@ -1,0 +1,90 @@
+<div
+  class="width-100 padding-20 main"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+>
+  <nav class="bord nav">
+    <div
+      fxLayout="row-reverse"
+      class="width-100vw z-in-2"
+      fxLayoutAlign="space-between"
+    >
+      <img src="../../../../assets/images/logo-text.png" class="logo-header" />
+      <div fxLayout="column" fxLayoutAlign="center end">
+       
+        <ul>  
+       
+  
+            <mat-icon (click)="sidenav.toggle()" class="nv-dis-non sidenav-menu">menu</mat-icon>
+      
+          @for (item of items; track item) {
+          <li>
+            <a class="a-text header-text-color" (click)="get(item.id)">
+              {{ item.name }}
+            </a>
+          </li>
+          }
+        </ul>
+        <div class="grad-line"></div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center center"  fxLayoutGap="10px" class="color-text" >
+        <!-- <a class="color-text d-n" routerLink="/login">ورود</a> -->
+        
+        <a class="color-text d-n " href="#" >ثبت نام </a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div >
+  <mat-sidenav-container fullscreen class="z-3 nv-dis-non" style="visibility: hidden;">
+    <mat-sidenav #sidenav mode="side" class="example-sidenav marg-top-sn" opened="false">
+  
+    
+        @for(item of items; track item){
+        <mat-list-item routerLink="1" routerLinkActive="active"> {{item.name}}</mat-list-item>}
+   
+    </mat-sidenav>
+  
+ 
+  </mat-sidenav-container>
+  </div>
+
+<!-- 
+<mat-sidenav-container>
+  <mat-sidenav mode="over" opened="true">
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<!-- <div class="width-100 padding-20 main" fxLayout="row" fxLayoutAlign="center center">
+
+<nav class="background nav border">
+  <div fxLayout="row-reverse" class="width-100vw z-in-2" fxLayoutAlign="space-between">
+    <img src="../../../../assets/images/logo-text.png" class="logo-header" >
+     <div fxLayout="column" fxLayoutAlign="center end">
+      <ul>
+        @for (item of items; track item) {
+          <li>
+            <a class="a-text header-text-color" (click)="get(item.id)">
+              {{ item.name }}
+            </a>
+          </li>
+        }
+        
+      </ul>
+      <div class="grad-line"></div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" class="color-text">
+      <a class="color-text" routerLink="/login"  >ورود</a>
+      /
+      <a class="color-text" routerLink="/register">ثبت نام </a>
+    </div>
+  </div>
+</nav>
+  
+</div> -->

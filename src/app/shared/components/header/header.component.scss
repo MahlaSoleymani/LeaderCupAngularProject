@@ -1,0 +1,172 @@
+.main {
+  position: absolute;
+  top: -500px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: max-content;
+  visibility: visible;
+  transition-property: transform;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+
+  animation-name: anim-trans;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes anim-trans {
+  100% {
+    transform: translateY(500px);
+    // position: fixed;
+  }
+}
+
+.nav {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 0;
+  height: 8vh;
+  padding: 0 50px;
+  z-index: 2;
+  width: 50%;
+  // visibility: hidden;
+
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  // box-shadow: 0px 3px 31px 0px rgba(240, 240, 240, 0.2);
+}
+
+@keyframes anim {
+  100% {
+    // visibility: visible;
+    width: 80%;
+  }
+}
+
+nav * {
+  display: inline;
+}
+
+ul {
+  padding: 10px;
+}
+
+nav li {
+  margin: 20px;
+  color: black;
+}
+nav li a {
+  font-size: 20px;
+  text-decoration: none !important;
+  cursor: pointer;
+  // color: white;
+}
+.bord {
+  border-bottom: 2px solid black;
+}
+.logo-size {
+  margin: 10px;
+  width: 145px;
+}
+
+// .background {
+//   background-color: rgba(217, 188, 154, 1);
+// }
+
+.z-in-2 {
+  z-index: 2 !important;
+}
+
+::ng-deep nav[_ngcontent-ng-c1266192963] a[_ngcontent-ng-c1266192963]:hover {
+  text-decoration: none !important;
+}
+
+.logo-header {
+  width: 56px;
+  height: 73px;
+}
+
+.width-100vw {
+  width: 100%;
+}
+
+.d-n {
+  display: block;
+}
+
+// .color-text {
+//   color: black;
+// }
+
+.color-text {
+  // color: white;
+}
+
+mat-icon {
+  display: none;
+visibility: hidden;
+}
+
+.marg-top-sn{
+  margin-top: 95px;
+}
+.sub-brdr{
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 16px;
+}
+.sidenav-menu {
+  font-size: 60px;
+  width: auto;
+  height: auto;
+  /* float: right; */
+  position: absolute;
+  top: 22px;
+  right: 68px;
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  li {
+    visibility: hidden;
+    display: none;
+  }
+  ul {
+    width: 0;
+  }
+  // mat-icon {
+  //   visibility: visible;
+  //   font-size: 50px;
+  //   width: auto;
+  //   height: auto;
+  //   position: absolute;
+  //   bottom: 30px;
+  //   right: 86px;
+  // }
+  .nv-dis-non{
+    display: block;
+    visibility: visible;
+  }
+  .d-n {
+    display: none !important;
+  }
+  .marg-top-sn{
+    margin-top: 81px;
+  }
+  .example-sidenav{
+    padding: 33px;
+    background-color: #6bbfbb;
+  }
+}

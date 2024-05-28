@@ -1,0 +1,47 @@
+<div
+  class="padding-lr-10 "
+  fxLayout="column"
+  fxLayoutAlign="start stretch"
+>
+  @if (showDate) {
+  <div
+    fxLayout="column"
+    fxFlexFill
+    fxLayoutAlign="start stretch"
+    class="marg-bot"
+  >
+    <mat-label class="date-time-lable">{{ dateLable }}</mat-label>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+   
+      <mat-form-field>
+        <mat-label>روز</mat-label>
+        <select  matNativeControl >
+          @for (d of days; track d) {
+          <option [value]="d.toString().padStart(2, '0')">
+            {{ d.toString().padStart(2, "0") }} </option
+          >}
+        </select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>ماه</mat-label>
+        <select matNativeControl >
+          @for (m of months; track m) {
+          <option [value]="m.toString().padStart(2, '0')">
+            {{ m.toString().padStart(2, "0") }} </option
+          >}
+        </select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>سال</mat-label>
+        <select  matNativeControl >
+          @for (y of years; track y) {
+          <option [value]="y.toString()">{{ y }}</option
+          >}
+        </select>
+      </mat-form-field>
+
+    </div>
+  </div>
+  }
+</div>
